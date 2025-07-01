@@ -43,7 +43,8 @@
             container: document.getElementById('dplayer-container'),
             // 视频源地址
             video: {
-                url: myParam
+                url: '/api/proxy?url=' + encodeURIComponent(myParam),
+                type: 'hls'
                 // 如果有多个清晰度，可以在这里添加更多的清晰度选项
                 // quality: [
                 //     { name: 'HD', url: 'https://example.com/your-video-hd.mp4', type: 'normal' },
